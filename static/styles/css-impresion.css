@@ -1,0 +1,26 @@
+.navbar, .footer, .sidebar, .no-print {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-size: 12pt;
+  }
+
+  /* Asegúrate de que todo el contenido importante se imprima */
+  .content, .content-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Ajustes adicionales para mejorar la impresión */
+  img {
+    max-width: 100%; /* Ajusta las imágenes a la anchura de la página */
+  }
+
+  h1, h2, h3, p {
+    color: #000; /* Asegúrate de que el texto sea legible */
+  }

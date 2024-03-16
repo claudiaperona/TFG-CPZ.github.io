@@ -1,0 +1,65 @@
+body,
+html {
+  /* o puedes usar .main-container si tienes un div que engloba todo */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Previene el desplazamiento en la página */
+  height: 100%; /* Establece la altura para llenar toda la pantalla */
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos de la lista se apilen verticalmente */
+  width: 100%; /* Ajusta el ancho del navbar al de la sidebar */
+  align-items: center; /* Centra los elementos de la lista en la sidebar */
+  background: none; /* Elimina el fondo para que no sobrescriba el de la sidebar */
+  padding: 0; /* Elimina el padding para alinear con la sidebar */
+}
+
+.navbar ul {
+  width: 100%; /* Ajusta el ancho de la lista al de la sidebar */
+  padding: 0; /* Elimina el padding para evitar desplazamientos innecesarios */
+  list-style: none; /* Elimina los bullets de la lista */
+}
+
+.navbar ul li {
+  width: 100%; /* Asegura que los elementos de la lista ocupen todo el ancho de la sidebar */
+  text-align: center; /* Centra el texto de los enlaces dentro de la sidebar */
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block; /* Hace que los enlaces ocupen todo el ancho del elemento li */
+  padding: 30px 0; /* Añade padding para hacer los enlaces más clicables */
+}
+
+.ucam-link,
+.ucam-link:visited,
+.ucam-link:hover,
+.ucam-link:active ul li a {
+  color: #edab00;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.input {
+  background: wheat;
+  padding: 10px;
+  text-align: center;
+  display: block;
+}
+
+/*Estilos del enlace*/
+
+#filterMenu {
+    position: absolute;
+    left: 400px; /* Alineado al inicio del contenedor */
+    z-index: 1050; /* Asegura que esté sobre otros elementos */
+    white-space: nowrap;
+}
+

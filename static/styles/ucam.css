@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  background-color: #004379; /* Azul oscuro */
+  position: absolute;
+  color: white;
+  padding: 1rem 0; /* Ajustado para no tener padding a los lados */
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px; /* Ajusta según sea necesario */
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente el contenido */
+}
+
+.sidebar img {
+  position: absolute; /* Posición absoluta en relación con la barra lateral */
+  top: 0; /* Posiciona la imagen en la parte superior de la barra lateral */
+  left: 50%; /* Centra horizontalmente la imagen */
+  transform: translateX(-50%); /* Corrige la posición para centrarla exactamente */
+  width: 80%; /* Ajusta el tamaño de la imagen al 10% del ancho de la barra lateral */
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app-header {
+  background-color: #004379; /* Dark blue */
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.toolbar-container {
+  background-color: #F0ECEC; /* Beige background */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.btn {
+  border: none;
+  padding: 0.5rem 2rem 0.5rem 1rem; /* Ajusta el padding según sea necesario */
+  cursor: pointer;
+  font-size: 1rem;
+  position: fixed; 
+  top: 10%; 
+  z-index: 20;
+  display: flex; /* Usa flexbox para alinear elementos verticalmente */
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.btnesp img {
+  margin-left: 0.5rem; /* Ajusta el margen derecho de la imagen */
+}
+
+
+.btn:nth-child(1) {
+  left: 10%;
+}
+
+.btn:nth-child(2) {
+  left: 20%;
+}
+
+
+.content-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.content {
+  background: #ffffff; /* White background for the content */
+  width: 90%; /* You can adjust this as needed */
+  height: 90%;
+  margin: 30px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  text-align: center;
+}
+
+.message {
+  color: #666;
+  font-size: 1.2rem;
+  position: fixed; /* Posicionamiento fijo en la pantalla */
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 10; 
+}
+
+.ucam-link {
+  color: #EDAB00; 
+}
+
+
+.content-container-list {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start; /* Cambiado de 'right' a 'flex-start' para alinear el contenido a la izquierda */
+  align-items: flex-start; /* Cambiado de 'center' a 'flex-start' para alinear el contenido en la parte superior */
+  padding-top: 30px;
+  overflow: auto; /* Permite el desplazamiento si el contenido excede el tamaño del contenedor */
+}
+
+.content-list {
+  background: #ffffff; 
+  width: 90%;
+  height: 85%;
+  max-height: 90vh; /* Altura máxima para permitir el desplazamiento dentro del contenedor */
+  margin: 30px;
+  margin-left: 140px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Opcional: añade una sombra sutil */
+  text-align: left; /* Alinea el texto a la izquierda */
+  overflow-y: auto; /* Permite el desplazamiento vertical si el contenido excede la altura del contenedor */
+}
+
+.message-list {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
